@@ -22,6 +22,17 @@ git -- version
 ## readme.md
 ## contributing.md
 
+# Commands
+
+## show the status of the working tree
+```
+git status
+```
+## show local changes
+``` 
+git diff
+```
+Go back from `git  diff` by trying `q`
 ## staging
 ```
 git add file
