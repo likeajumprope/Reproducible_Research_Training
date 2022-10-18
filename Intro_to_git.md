@@ -22,6 +22,10 @@ git -- version
 ## readme.md
 ## contributing.md
 
+## staging
+```
+git add file
+```
 ## staging  and committing
 ```
 it commit -a -m "Intro to git"
