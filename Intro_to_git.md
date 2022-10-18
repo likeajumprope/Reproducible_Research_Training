@@ -24,8 +24,18 @@ git -- version
 
 # Creating ssh keys
 
-![alt text](img/Picture1.png)
+Type the following in your terminal to create a new ssh key pair
+![](img/Picture1.png)
 
+add the key pair to your .ssh file:
+![](img/Picture2.png)
+
+copy the public(!) part of the pair
+![](img/Picture3.png)
+
+Add public(!) key to git hub:
+![](img/Picture4.png)
+![](img/Picture5.png)
 
 # Commands
 
