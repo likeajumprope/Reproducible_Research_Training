@@ -34,9 +34,11 @@ copy the public(!) part of the pair
 ![](img/Picture3.png)
 
 Add public(!) key to git hub:
+
+<!--- 
 ![](img/Picture4.png)
 ![](img/Picture5.png)
-
+--->
 # Commands
 
 ## show the status of the working tree
