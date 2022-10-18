@@ -23,6 +23,12 @@ git -- version
 ## contributing.md
 
 ## branches 
+### new branch and publish it to remote
+```
+git checkout -b dev
+git push -u origin dev
+```
+
 ### best practices
 
 # merge conflicts
