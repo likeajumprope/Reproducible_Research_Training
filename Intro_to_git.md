@@ -22,6 +22,10 @@ git -- version
 ## readme.md
 ## contributing.md
 
+## staging  and committing
+```
+it commit -a -m "Intro to git"
+```
 ## branches 
 ### new branch and publish it to remote
 ```
@@ -31,5 +35,5 @@ git push -u origin dev
 
 ### best practices
 
-# merge conflicts
+## merge conflicts
 
