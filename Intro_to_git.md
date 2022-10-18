@@ -26,9 +26,17 @@ git -- version
 ```
 git add file
 ```
+## committing
+```
+git commit -m "my commit"
+```
 ## staging  and committing
 ```
-it commit -a -m "Intro to git"
+git commit -a -m "Intro to git"
+```
+## push to remote (publish)
+```
+git push
 ```
 ## branches 
 ### new branch and publish it to remote
