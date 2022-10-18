@@ -22,6 +22,11 @@ git -- version
 ## readme.md
 ## contributing.md
 
+# Creating ssh keys
+
+![alt text](/img.Picture1.png)
+
+
 # Commands
 
 ## show the status of the working tree
@@ -56,7 +61,7 @@ git checkout -b dev
 git push -u origin dev
 ```
 
-### best practices
+## best practices
 
 ## merge conflicts
 
