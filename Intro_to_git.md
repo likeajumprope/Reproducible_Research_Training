@@ -24,7 +24,7 @@ git -- version
 
 # Creating ssh keys
 
-![alt text](/img.Picture1.png)
+![alt text](img/Picture1.png)
 
 
 # Commands
