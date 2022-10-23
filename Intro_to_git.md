@@ -11,7 +11,7 @@ git -- version
 ## Git
 ### What is git?
 
-Git is a version control system that allows you to track and save changes to your projects, files, code etc by taking annotated, reversible snapshots of your repositories.
+Git is a version control system that allows you to track and save changes to your projects, files, code etc by taking annotated, reversible snapshots of your repositories. 
 
 
 ## Git on Github.com
