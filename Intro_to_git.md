@@ -8,19 +8,24 @@
 ```
 git -- version
 ```
+## Git
+### What is git?
+
+Git is a version control system that allows you to track and save changes to your projects, files, code etc by taking annotated, reversible snapshots of your repositories. 
+
 
 ## Git on Github.com
 
-## Git via vs.code
+### Organisation of Github
+Git is organized in repositories. You can create, commit into and annoate into repositories right on github.
 
-## Git on the command line
+## Concepts
 
-# Concepts
+### .gitignore
+The .gitignore file includes all files that are not being tracked. 
 
-## .gitignore
-
-## readme.md
-## contributing.md
+### readme.md
+###  contributing.md
 
 # Creating ssh keys
 
@@ -39,41 +44,52 @@ Add public(!) key to git hub:
 ![](img/Picture4.png)
 ![](img/Picture5.png)
 --->
-# Commands
+# Git on the command line
 
-## show the status of the working tree
+## Commands
+
+### show the status of the working tree
 ```
 git status
 ```
-## show local changes
+### show local changes
 ``` 
 git diff
 ```
 Go back from `git  diff` by trying `q`
-## staging
+### staging
 ```
 git add file
 ```
-## committing
+### committing
 ```
 git commit -m "my commit"
 ```
-## staging  and committing
+### staging  and committing
 ```
 git commit -a -m "Intro to git"
 ```
-## push to remote (publish)
+### push to remote (publish)
 ```
 git push
 ```
-## branches 
-### new branch and publish it to remote
+### branches 
+#### new branch and publish it to remote
 ```
 git checkout -b dev
 git push -u origin dev
 ```
 
-## best practices
+## Git via GUIs
 
-## merge conflicts
+### VScode
+
+### Github Desktob
+
+## Best practices
+
+1. You should have at least two branches: *main* and *dev*. 
+
+
+## Merge conflicts
 
