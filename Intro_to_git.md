@@ -1,25 +1,30 @@
 # Introduction to Git course
 
-## Pre-requisites for the course
+<details><summary><h2>Pre-requisites for the course</h2></summary>
 
  - sign up for a [github.com account](https://github.com/) and make sure you remember the password to sign in
- - make sure that git is installed on your machine.  You can check this by typing 
+ - make sure that git is installed on your machine.  You can check this by typing: 
 
 ```
 git -- version
 ```
-## Git
-### What is git?
+</details>
+
+<details><summary><h2>
+What is Git?</h2></summary>
 
 Git is a version control system that allows you to track and save changes to your projects, files, code etc by taking annotated, reversible snapshots of your repositories. 
+</details>
 
-
-## Git on Github.com
-
+<details><summary><h2>
+Git on Github.com
+</h2></summary>
 ### Organisation of Github
-Git is organized in repositories. You can create, commit into and annoate into repositories right on github.
+Git is organized in repositories. You can create, commit into and anoate into repositories right on github.
+</details>
 
-## Concepts
+<details><summary><h2>
+Git concepts </h2></summary>
 
 ### .gitignore
 The .gitignore file includes all files that are not being tracked. 
@@ -27,7 +32,10 @@ The .gitignore file includes all files that are not being tracked.
 ### readme.md
 ###  contributing.md
 
-# Creating ssh keys
+</details>
+
+<details><summary><h2>
+Creating ssh keys </h2></summary>
 
 Type the following in your terminal to create a new ssh key pair
 ![](img/Picture1.png)
@@ -44,7 +52,10 @@ Add public(!) key to git hub:
 ![](img/Picture4.png)
 ![](img/Picture5.png)
 --->
-# Git on the command line
+
+</details>
+
+<details><summary><h2>Git at the command line</h2></summary>
 
 ## Commands
 
@@ -73,23 +84,29 @@ git commit -a -m "Intro to git"
 ```
 git push
 ```
-### branches 
+</details>
+
+<details><summary><h2>Branches </h2></summary>
+
 #### new branch and publish it to remote
 ```
 git checkout -b dev
 git push -u origin dev
 ```
+</details>
 
-## Git via GUIs
+
+<details><summary><h2>Git via GUIs</h2></summary>
 
 ### VScode
 
 ### Github Desktob
+</details>
 
-## Best practices
+<details><summary><h2>Best practices</h2></summary>
 
 1. You should have at least two branches: *main* and *dev*. 
+</details>
 
-
-## Merge conflicts
-
+<details><summary><h2>Merge conflicts</h2></summary>
+</details>
