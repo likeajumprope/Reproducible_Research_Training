@@ -1,0 +1,110 @@
+---
+title: "Intro_to_R"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+date: '2023-01-08'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# R Markdown
+
+R Markdown is a powerful tool for creating reproducible documents that contain code, output, and text. It allows you to embed R code and output directly in your document, and can even include interactive elements like plots and tables.
+
+## The Markdown Format
+
+Headings: To create a heading, you can use the `#` symbol followed by a space and the heading text. The number of `#` symbols indicates the level of the heading. For example, to create a level-1 heading, you can use the following syntax:
+
+#### this is a subheading
+
+##### this is a sub-sub heading
+
+Paragraphs: To create a paragraph, you can simply type the text and leave a blank line before and after the paragraph.
+
+Emphasis: To add emphasis to text, you can use the * symbol to create italic text or the ** symbol to create bold text. For example, to create italic text, you can use the following syntax:
+
+*this text is in italics*
+
+**this text is bold**
+
+Lists: To create a bulleted list, you can use the - symbol followed by a space. For example:
+
+- item1
+- item2
+- item3
+
+To create a numbered list, you can use the `1.` syntax followed by a space. For example:
+
+1. first item
+2. second item
+3. third item
+
+Links: To create a link, you can use the `[text](url)` syntax. For example:
+
+[Google](https://www.google.com)
+
+Images: To include an image, you can use the `![alt text](image url)` syntax. The `alt text` is a description of the image that will be displayed if the image is not able to be displayed. For example:
+
+#![cat](https://www.example.com/cat.jpg)
+
+## Create Markdown docuemnts in R
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+To create an R Markdown document, you will need to install the rmarkdown package and create a new file with the `.Rmd` extension. You can do this by running the following code:
+
+```{r install_markdown}
+#install.packages("rmarkdown")
+#rmarkdown::draft("my-document.Rmd", template = "default", package = "rmarkdown")
+```
+
+This will open a new R Markdown file in your default text editor. 
+
+You can aslo create a new R Markdown file using the `File > New File > R Markdown...` menu in R Studio.
+The file will contain some basic YAML metadata, as well as a few example code chunks and text blocks.
+
+To include a code chunk in your document, you can use the following syntax:
+
+```{r}
+# R code goes here
+```
+
+## Kintting your document
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+
+## Customizing your code chunk
+You can include various statements with your code, for example `echo = FALSE` prevents printing of the R code that generated the plot:
+
+```{r cars2, echo=FALSE}
+summary(cars)
+```
+
+Including the label `include = FALSE` prevents the code chunk from returnign any output at all. This is useful when you want to run some code in the background that sould not apear on your script.
+
+```{r cars3, echo=FALSE, include=FALSE}
+summary(cars)
+```
+
+## The `.yaml` Header
+
+R Markdown allows to a variety of different file types. They are specified in the 
+`.yaml` header:
+
+In Markdown, a YAML header is a block of YAML code at the beginning of a Markdown file that is used to define metadata for the document. The YAML header is usually surrounded by `---` on the top and bottom and is used to specify information such as the document title, author, and other metadata, such as font size and margin size. It can contain any `.yaml` key.
+
+Here is an example of a YAML header in a Markdown file:
+
+
+
+```{r, interactive=TRUE}
+library(knitr)
+plot(1:10)
+```
