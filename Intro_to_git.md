@@ -16,6 +16,48 @@ What is Git?</h2></summary>
 Git is a version control system that allows you to track and save changes to your projects, files, code etc by taking annotated, reversible snapshots of your repositories. 
 </details>
 
+
+<details><summary><h2>
+Git on your computer?</h2></summary>
+
+1. Navigate to the directory where you want to create your Git repository. For example, if you want to create a repository for a new project called "myproject", you would navigate to the directory where you want to store your project and run the following command:
+
+```
+$ git init myproject
+```
+2. This will create a new directory called "myproject" that is now a Git repository. You can navigate into the directory and start adding files to it.
+3. After adding some files, you can check the status of your repository using the command:
+
+```
+$ git status
+```
+This will show you which files have been modified or added since the last commit.
+
+4. To add these changes to your repository, you need to first stage them. You can do this by running the command:
+
+```
+$ git add .
+```
+
+This will add all the changes you've made to the "staging area".
+
+5. Once the changes are staged, you can commit them to your repository by running the command:
+
+```
+$ git commit -m "Initial commit"
+```
+
+This will save the changes to the repository and add a message describing the commit.
+
+6. After commit, you can push the code to your remote repository (Github, Bitbucket, Gitlab etc.)
+
+```
+$ git push origin <branch-name>
+```
+
+</details>
+
+
 <details><summary><h2>
 Git on Github.com
 </h2></summary>
