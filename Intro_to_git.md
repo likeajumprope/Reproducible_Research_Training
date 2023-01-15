@@ -200,7 +200,7 @@ git push
 </details>
 
 <details><summary><h2>Merge conflicts</h2></summary>
-</details>
+
 
 Merge conflicts occur when there are changes in the same lines of code in different branches that Git is unable to automatically merge. When this happens, Git will mark the conflicting lines in the file, and you will need to resolve the conflict manually. Here is the general process for resolving merge conflicts:
 
@@ -227,7 +227,7 @@ $ git push
 It is also possible to use a merge tool to resolve conflicts. A merge tool provides a graphical interface that allows you to view and compare the conflicting changes, and select which changes to keep. Some popular merge tools include `kdiff3`, `meld`, and `p4merge`.
 
 It is important to keep in mind that merging conflicts can be a complex process and it's always better to communicate with the team members and coordinate with them before merging your changes.
-
+</details>
 
 <details><summary><h2>Branches </h2></summary>
 
