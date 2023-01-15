@@ -92,8 +92,38 @@ Git concepts </h2></summary>
 ### .gitignore
 The .gitignore file includes all files that are not being tracked. 
 
-### readme.md
-###  contributing.md
+### Readme.md
+
+A README.md file is a text file that contains information about a project. It is typically located in the root directory of a repository and is used to provide documentation and instructions for users who want to understand or contribute to the project.
+
+The README.md file typically contains the following information:
+
+- Project name and description: A brief summary of what the project is and what it does.
+
+- Installation instructions: Instructions on how to install and set up the project, including any dependencies that need to be installed.
+
+- Usage instructions: Information on how to use the project, including any command-line arguments or configuration options.
+
+- Contribution guidelines: Information on how to contribute to the project, including any coding standards or conventions that need to be followed (also sometimes in a seperate Contributing.md)
+
+- License information: Information on the license under which the project is released, such as the MIT License or the GNU General Public License.
+###  Contributing.md
+
+A CONTRIBUTING.md file is a text file that contains information about how to contribute to a project. It is typically located in the root directory of a repository and is used to provide guidelines and instructions for users who want to contribute code, documentation, or other types of changes to the project.
+
+A CONTRIBUTING.md file typically contains the following information:
+
+- Code of Conduct: Information on the code of conduct that must be followed when contributing to the project. This can include guidelines for behavior, communication, and inclusivity.
+
+- Reporting issues: Instructions on how to report issues or bugs, including any templates or guidelines that should be followed.
+
+- Submitting changes: Information on how to submit changes to the project, including any coding standards or conventions that should be followed, and instructions on how to create a pull request.
+
+- Testing: Information on how to test the code and any instructions on how to run the tests.
+
+- Documentation: Information on how to contribute to the documentation, including any guidelines or conventions that should be followed.
+
+- Styleguides: Information on any styleguides or linting rules that should be followed when contributing code.
 
 </details>
 
@@ -172,6 +202,31 @@ git push
 <details><summary><h2>Merge conflicts</h2></summary>
 </details>
 
+Merge conflicts occur when there are changes in the same lines of code in different branches that Git is unable to automatically merge. When this happens, Git will mark the conflicting lines in the file, and you will need to resolve the conflict manually. Here is the general process for resolving merge conflicts:
+
+1. Identify the conflict: Git will mark the conflicting lines in the file with special markers, such as <<<<<<< and >>>>>>>. The lines between these markers will show the conflicting changes.
+
+2. Decide on the changes to keep: Look at the conflicting changes and decide which changes you want to keep and which changes you want to discard. You can use a text editor or a merge tool to make this process easier.
+
+3. Remove the conflict markers: Once you have decided on the changes to keep, remove the conflict markers (<<<<<<<, =======, >>>>>>>) and any lines that you don't want to keep.
+
+4. Add the resolved file: Once you have resolved the conflicts, you need to stage the resolved file
+
+```
+$ git add <file-name>
+```
+
+Commit the merge: After you have resolved the conflicts and added the file, you can commit the merge with a meaningful commit message.
+```
+$ git commit -m "resolved merge conflict"
+```
+Push the changes: Finally, push the changes to the remote repository.
+```
+$ git push
+```
+It is also possible to use a merge tool to resolve conflicts. A merge tool provides a graphical interface that allows you to view and compare the conflicting changes, and select which changes to keep. Some popular merge tools include `kdiff3`, `meld`, and `p4merge`.
+
+It is important to keep in mind that merging conflicts can be a complex process and it's always better to communicate with the team members and coordinate with them before merging your changes.
 
 
 <details><summary><h2>Branches </h2></summary>
