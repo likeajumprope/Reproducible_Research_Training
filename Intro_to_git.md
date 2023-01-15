@@ -178,9 +178,43 @@ git push
 
 <details><summary><h2>Branches </h2></summary>
 
-#### new branch and publish it to remote
+To create a new branch in Git, you can use the command:
+
 ```
-git checkout -b dev
-git push -u origin dev
+$ git branch <branch-name>
 ```
+This will create a new branch with the name specified. For example,
+
+```
+$ git branch feature-x
+```
+Once the branch is created, you can switch to the new branch by using the command:
+
+```
+$ git checkout <branch-name>
+```
+For example,
+
+```
+$ git checkout feature-x
+```
+When you create a new branch, it is created based on the commit that you are currently on. You can make changes and commit them as usual once you are on the new branch.
+
+It's also worth noting that you can also create a new branch and switch to it in one command:
+
+```
+$ git checkout -b <branch-name>
+```
+This will create a new branch with the name specified and switch to it.
+
+It is good practice to use branches for different features, bug fixes and also for testing purpose. It helps to keep your code organized and maintain the quality of the code.
+
+Once you made your changes, you can push the branch to remote repository.
+
+```
+$ git push origin <branch-name>
+```
+Then you can create a pull request on GitHub, it will notify the team members that you have made changes and ready to merge it with the main branch.
+
+
 </details>
