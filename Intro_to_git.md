@@ -101,15 +101,26 @@ The .gitignore file includes all files that are not being tracked.
 Creating ssh keys </h2></summary>
 
 Type the following in your terminal to create a new ssh key pair
-![](img/Picture1.png)
 
-add the key pair to your .ssh file:
-![](img/Picture2.png)
+```
+$ ssh-keygen -t 4096 -C ">your_git_email<"
+```
+
+This will generate a private/public rsa key pair. Hit `enter` when promyted to giev a passphrase (no passphrase).
+You should receive a prompt that your key pair has been generated and where it has been stored.
+
+
+Now you need to add the key pair to your .ssh file. Type:
+
+```
+$ ssh-add ~/.ssh/id_rsa
+```
 
 copy the public(!) part of the pair
-![](img/Picture3.png)
-
-Add public(!) key to git hub:
+```
+$ clip < ~/.ssh/id_rsa.pub
+```
+Add public(!) key to git hub.
 
 <!--- 
 ![](img/Picture4.png)
