@@ -137,13 +137,6 @@ Add public(!) key to git hub.
 ### Github Desktob
 </details>
 
-<details><summary><h2>Best practices</h2></summary>
-
-1. You should have at least two branches: *main* and *dev*. 
-</details>
-
-<details><summary><h2>Merge conflicts</h2></summary>
-</details>
 
 <details><summary><h2>Important git commands</h2></summary>
 
@@ -175,6 +168,11 @@ git commit -a -m "Intro to git"
 git push
 ```
 </details>
+
+<details><summary><h2>Merge conflicts</h2></summary>
+</details>
+
+
 
 <details><summary><h2>Branches </h2></summary>
 
@@ -215,6 +213,27 @@ Once you made your changes, you can push the branch to remote repository.
 $ git push origin <branch-name>
 ```
 Then you can create a pull request on GitHub, it will notify the team members that you have made changes and ready to merge it with the main branch.
+</details>
 
+<details><summary><h2>Best practices</h2></summary>
 
+1. **Commit often** : Committing your changes frequently allows you to track your progress and easily undo mistakes. It's also easier to review smaller, more focused commits than a large one.
+
+2. ***Use meaningful commit messages**: Each commit message should briefly describe the changes made in the commit. This makes it easier for others to understand the purpose of the commit and to review the code.
+
+3. **Keep commits small and focused**: A commit should include only related changes. Avoid including multiple unrelated changes in a single commit, as it makes it harder to understand and revert the changes.
+
+4. **Use branches**: Create branches for different features or bug fixes, so that you can work on them independently without affecting the main branch. Use branches also for testing purpose. You should have at least two branches: *main* and *dev*. 
+
+5. **Pull before pushing**: Before pushing your changes, make sure to pull the latest changes from the remote repository to avoid conflicts.
+
+6. **Review code before pushing**: It is a good practice to review your code before pushing it to the remote repository. This can help to catch any errors or mistakes that might have been missed during development.
+
+7. **Use a .gitignore file**: Use a .gitignore file to exclude files and directories that should not be tracked by Git. Common examples include build artifacts, dependencies, and sensitive files.
+
+8.**Keep your repository clean**: Keep your repository clean by deleting branches that have been merged or are no longer needed.
+
+9. **Use pull requests**: Use pull requests to review and merge code changes. This allows other team members to review the code and suggest changes before it is merged into the main branch.
+
+10 **Use version tags**: Use version tags to mark specific commits as releases. This allows you to easily revert to a previous version if needed.
 </details>
